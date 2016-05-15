@@ -1,0 +1,41 @@
+.whole-content,
+.adminmenu,
+.content,
+.footer,
+.main,
+.sidebar,
+.sidebar-item,
+.day
+.body,
+.comment,
+.referer,
+hr {
+  margin: 0 auto;
+  margin-bottom: $pad;
+  width: 100%;
+}
+
+.whole-content {
+  padding: 0 $pad;
+}
+
+.footer {
+  border-top: $border;
+  padding-top: $pad;
+  text-align: center;
+  font-size: $font-size-small;
+}
+
+.main {}
+.sidebar {}
+
+hr {
+  border-top: $border;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: baseline;
+  border: $border;
+}

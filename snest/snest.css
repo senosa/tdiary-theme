@@ -232,4 +232,38 @@ textarea {
   color: #ffffff;
   text-shadow: none; }
 
+.whole-content,
+.adminmenu,
+.content,
+.footer,
+.main,
+.sidebar,
+.sidebar-item,
+.day
+.body,
+.comment,
+.referer,
+hr {
+  margin: 0 auto;
+  margin-bottom: 16px;
+  width: 100%; }
+
+.whole-content {
+  padding: 0 16px; }
+
+.footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  padding-top: 16px;
+  text-align: center;
+  font-size: 14px; }
+
+hr {
+  border-top: 1px solid rgba(0, 0, 0, 0.2); }
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: baseline;
+  border: 1px solid rgba(0, 0, 0, 0.2); }
+
 /*# sourceMappingURL=snest.css.map */

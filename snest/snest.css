@@ -317,10 +317,10 @@ p {
 
 a {
   color: #385466; }
-  .section p a, .section li a, .section dd a {
+  .section p a, .section li a, .section dd a, ul.category a {
     color: #2196f3;
     text-decoration: underline; }
-    .section p a:visited, .section li a:visited, .section dd a:visited {
+    .section p a:visited, .section li a:visited, .section dd a:visited, ul.category a:visited {
       color: #385466; }
 
 .section p a.amazon-detail {

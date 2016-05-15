@@ -55,7 +55,8 @@ a {
   color: $primary;
   .section p &,
   .section li &,
-  .section dd &, {
+  .section dd &,
+  ul.category & {
     color: $link-color;
     text-decoration: underline;
     &:visited {

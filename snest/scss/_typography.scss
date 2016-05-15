@@ -1,0 +1,120 @@
+body {
+  color: $text;
+  font-family: $font-family;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  font-weight: 500;
+  margin: $pad-large 0 $pad-base;
+}
+
+h1 {
+  font-size: $font-size-diary-title;
+}
+
+h2 {
+  font-size: $font-size-date-title;
+}
+
+h3 {
+  font-size: $font-size-section-title;
+}
+
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  margin: $pad-base 0 $pad-xsmall;
+}
+
+h4 {
+  font-size: $font-size-large;
+}
+
+h5 {
+  font-size: $font-size-base;
+}
+
+h6 {
+  font-size: $font-size-small;
+}
+
+p {
+  margin-bottom: $pad-base;
+}
+
+a {
+  color: $primary;
+  .section p &,
+  .section li &,
+  .section dd &, {
+    color: $link-color;
+    text-decoration: underline;
+    &:visited {
+      color: $link-visited-color;
+    }
+  }
+}
+
+.section p a.amazon-detail {
+  text-decoration: none;
+}
+
+pre {
+  background: $grey;
+  font-family: $monospace;
+  margin-bottom: $pad-base;
+  padding: $pad-small;
+  white-space: pre-wrap;
+}
+
+strong {
+  color: $red;
+}
+
+em {
+  font-weight: 600;
+  padding-right: $pad-xsmall;
+}
+
+ul,
+ol {
+  padding-left: $pad-large;
+  margin-bottom: $pad-base;
+  & & {
+    margin-bottom: 0;
+  }
+}
+
+dl {
+  margin-bottom: $pad-base;
+}
+
+dd {
+  margin-left: $pad-large;
+}
+
+blockquote {
+  border-left: 2px solid $primary;
+  font-family: $serif;
+  font-style: italic;
+  margin-bottom: $pad-base;
+  padding-left: $pad-base;
+}
+
+p.source {
+  font-size: $font-size-small;
+  margin: -$pad-base 0 0;
+}
+
+div.day div.tags {
+  font-size: $font-size-small;
+}

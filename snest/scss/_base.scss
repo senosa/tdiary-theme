@@ -11,17 +11,17 @@
 .referer,
 hr {
   margin: 0 auto;
-  margin-bottom: $pad;
+  margin-bottom: $pad-base;
   width: 100%;
 }
 
 .whole-content {
-  padding: 0 $pad;
+  padding: 0 $pad-small;
 }
 
 .footer {
   border-top: $border;
-  padding-top: $pad;
+  padding-top: $pad-base;
   text-align: center;
   font-size: $font-size-small;
 }
@@ -34,8 +34,14 @@ hr {
 }
 
 img {
+  display: block;
   height: auto;
   max-width: 100%;
   vertical-align: baseline;
+  margin: 0 auto;
   border: $border;
+  &.photo {
+    margin: 0 auto;
+    float: none;
+  }
 }

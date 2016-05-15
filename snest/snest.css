@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! sanitize.css v3.3.0 | CC0 1.0 Public Domain | github.com/10up/sanitize.css */
 /*
  * Normalization
@@ -249,7 +250,7 @@ hr {
   width: 100%; }
 
 .whole-content {
-  padding: 0 16px; }
+  padding: 0 8px; }
 
 .footer {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
@@ -261,9 +262,113 @@ hr {
   border-top: 1px solid rgba(0, 0, 0, 0.2); }
 
 img {
+  display: block;
   height: auto;
   max-width: 100%;
   vertical-align: baseline;
+  margin: 0 auto;
   border: 1px solid rgba(0, 0, 0, 0.2); }
+  img.photo {
+    margin: 0 auto;
+    float: none; }
+
+body {
+  color: rgba(0, 0, 0, 0.8);
+  font-family: Avenir, Verdana, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  font-size: 16px;
+  line-height: 1.8; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  font-weight: 500;
+  margin: 32px 0 16px; }
+
+h1 {
+  font-size: 24px; }
+
+h2 {
+  font-size: 24px; }
+
+h3 {
+  font-size: 28px; }
+
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  margin: 16px 0 4px; }
+
+h4 {
+  font-size: 18px; }
+
+h5 {
+  font-size: 16px; }
+
+h6 {
+  font-size: 14px; }
+
+p {
+  margin-bottom: 16px; }
+
+a {
+  color: #385466; }
+  .section p a, .section li a, .section dd a {
+    color: #2196f3;
+    text-decoration: underline; }
+    .section p a:visited, .section li a:visited, .section dd a:visited {
+      color: #385466; }
+
+.section p a.amazon-detail {
+  text-decoration: none; }
+
+pre {
+  background: #efefef;
+  font-family: "Osaka－等幅", Osaka-mono, "ＭＳ ゴシック", "MS Gothic", monospace;
+  margin-bottom: 16px;
+  padding: 8px;
+  white-space: pre-wrap; }
+
+strong {
+  color: #a12800; }
+
+em {
+  font-weight: 600;
+  padding-right: 4px; }
+
+ul,
+ol {
+  padding-left: 32px;
+  margin-bottom: 16px; }
+  ul ul,
+  ol ul, ul
+  ol,
+  ol
+  ol {
+    margin-bottom: 0; }
+
+dl {
+  margin-bottom: 16px; }
+
+dd {
+  margin-left: 32px; }
+
+blockquote {
+  border-left: 2px solid #385466;
+  font-family: "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "メイリオ", Meiryo, serif;
+  font-style: italic;
+  margin-bottom: 16px;
+  padding-left: 16px; }
+
+p.source {
+  font-size: 14px;
+  margin: -16px 0 0; }
+
+div.day div.tags {
+  font-size: 14px; }
 
 /*# sourceMappingURL=snest.css.map */

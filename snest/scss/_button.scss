@@ -1,0 +1,59 @@
+span.adminmenu a,
+input[type=submit],
+input[type=reset],
+button {
+  background: $primary;
+  border: $border;
+  border-radius: $radius;
+  color: $white;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0;
+  padding: $pad-small $pad-base;
+  padding: $pad-xsmall $pad-small;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+span.adminmenu a:hover,
+input[type=submit]:hover,
+input[type=reset]:hover,
+button:hover {
+  background: darken($primary, 10);
+}
+
+span.adminmenu a:focus,
+input[type=submit]:focus,
+input[type=reset]:focus,
+button:focus {
+  background: darken($primary, 10);
+}
+
+span.adminmenu a:active,
+input[type=submit]:active,
+input[type=reset]:active,
+button:active {
+  background: darken($secondary, 10);
+}
+
+// Ghost <%= navi_admin %> in .sidebar
+.sidebar span.adminmenu a {
+  background: inherit;
+  color: inherit;
+}
+
+.sidebar span.adminmenu a:hover {
+  background: darken($primary, 10);
+  color: $white;
+}
+
+.sidebar span.adminmenu a:focus {
+  background: darken($primary, 10);
+  color: $white;
+}
+
+.sidebar span.adminmenu a:active {
+  background: darken($secondary, 10);
+  color: $white;
+}

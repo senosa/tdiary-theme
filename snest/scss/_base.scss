@@ -19,6 +19,18 @@ hr {
   padding: 0 $pad-small;
 }
 
+.commentbody,
+.commentshort {
+  border-left: 2px solid $divider;
+  margin-left: $pad-small;
+  padding-left: $pad-small;
+  body.update & {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
 .footer {
   border-top: $border;
   padding-top: $pad-base;

@@ -253,13 +253,13 @@ hr {
   padding: 0 8px; }
 
 .footer {
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
   padding-top: 16px;
   text-align: center;
   font-size: 14px; }
 
 hr {
-  border-top: 1px solid rgba(0, 0, 0, 0.2); }
+  border-top: 1px solid rgba(0, 0, 0, 0.15); }
 
 img {
   display: block;
@@ -267,7 +267,7 @@ img {
   max-width: 100%;
   vertical-align: baseline;
   margin: 0 auto;
-  border: 1px solid rgba(0, 0, 0, 0.2); }
+  border: 1px solid rgba(0, 0, 0, 0.15); }
   img.photo {
     margin: 0 auto;
     float: none; }
@@ -373,5 +373,22 @@ p.source {
 
 div.day div.tags {
   font-size: 14px; }
+
+table {
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  margin-bottom: 16px; }
+
+thead th {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+  text-align: left; }
+
+tbody {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
+
+th,
+td {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 8px;
+  vertical-align: inherit; }
 
 /*# sourceMappingURL=snest.css.map */

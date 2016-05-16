@@ -4,8 +4,6 @@ $pad-xsmall: 4px;
 $pad-small: 8px;
 $pad-large: 32px;
 
-$border: 1px solid rgba(0, 0, 0, .2);
-
 // Color
 $primary: #385466;
 $secondary: #41446f;
@@ -14,8 +12,11 @@ $grey: #efefef;
 $white: #fff;
 $red: #a12800;
 $text: rgba(0, 0, 0, .8);
+$divider: rgba(0, 0, 0, .15);
 $link-color: #2196f3;
 $link-visited-color: $primary;
+
+$border: 1px solid $divider;
 
 // Font
 $font-size-base: 16px;

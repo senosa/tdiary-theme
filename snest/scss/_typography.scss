@@ -53,21 +53,19 @@ p {
 
 a {
   color: $primary;
-  .section p &,
-  .section li &,
-  .section dd &,
-  .section td &,
-  ul.category & {
+  .day & {
     color: $link-color;
-    text-decoration: underline;
     &:visited {
       color: $link-visited-color;
     }
   }
-}
-
-.section p a.amazon-detail {
-  text-decoration: none;
+  .section & {
+    text-decoration: underline;
+  }
+  .section &.amazon-detail,
+  .section h3 & {
+    text-decoration: none;
+  }
 }
 
 pre {

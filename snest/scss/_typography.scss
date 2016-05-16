@@ -77,6 +77,10 @@ pre {
   white-space: pre-wrap;
 }
 
+code {
+  font-family: $monospace;
+}
+
 strong {
   color: $red;
 }

@@ -333,6 +333,9 @@ pre {
   padding: 8px;
   white-space: pre-wrap; }
 
+code {
+  font-family: "Osaka－等幅", Osaka-mono, "ＭＳ ゴシック", "MS Gothic", monospace; }
+
 strong {
   color: #a12800; }
 

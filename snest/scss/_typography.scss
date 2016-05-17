@@ -59,6 +59,11 @@ p {
   margin-bottom: $pad-base;
 }
 
+p.message,
+span.message {
+  background-color: $red;
+}
+
 a {
   color: $primary;
   .day & {

@@ -65,12 +65,9 @@ span.message {
 }
 
 a {
-  color: $primary;
-  .day & {
-    color: $link-color;
-    &:visited {
-      color: $link-visited-color;
-    }
+  color: $link-color;
+  &:visited {
+    color: $link-visited-color;
   }
   .section & {
     text-decoration: underline;

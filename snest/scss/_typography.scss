@@ -106,6 +106,10 @@ ol {
   & & {
     margin-bottom: 0;
   }
+  .textarea & {
+    padding: 0;
+    margin-bottom: $pad-small;
+  }
 }
 
 dl {

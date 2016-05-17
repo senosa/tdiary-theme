@@ -61,6 +61,10 @@ div.profile {
   }
 }
 
+form.update > div {
+  padding-bottom: $pad-base;
+}
+
 hr {
   border-top: $border;
 }

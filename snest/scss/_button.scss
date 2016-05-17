@@ -1,4 +1,5 @@
 span.adminmenu a,
+input[type=button],
 input[type=submit],
 input[type=reset],
 button {
@@ -17,6 +18,7 @@ button {
 }
 
 span.adminmenu a:hover,
+input[type=button]:hover,
 input[type=submit]:hover,
 input[type=reset]:hover,
 button:hover {
@@ -24,6 +26,7 @@ button:hover {
 }
 
 span.adminmenu a:focus,
+input[type=button]:focus,
 input[type=submit]:focus,
 input[type=reset]:focus,
 button:focus {
@@ -31,6 +34,7 @@ button:focus {
 }
 
 span.adminmenu a:active,
+input[type=button]:active,
 input[type=submit]:active,
 input[type=reset]:active,
 button:active {

@@ -31,6 +31,11 @@ h3 {
   font-size: $font-size-section-title;
 }
 
+div.sidebar h3 {
+  font-size: $font-size-date-title;
+  margin: $pad-large 0 $pad-base;
+}
+
 h4,
 h5,
 h6 {

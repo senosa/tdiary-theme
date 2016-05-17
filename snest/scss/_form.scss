@@ -110,6 +110,9 @@ textarea {
   margin-bottom: $pad-small;
   max-width: 100%;
   width: 100%;
+  .update & {
+    width: inherit;
+  }
 }
 
 .field.title {

@@ -8,6 +8,7 @@ body {
 h1,
 h2,
 h3,
+.update div.caption,
 h4,
 h5,
 h6 {
@@ -24,6 +25,7 @@ h2 {
   font-size: $font-size-date-title;
 }
 
+.update div.caption,
 h3 {
   font-size: $font-size-section-title;
 }

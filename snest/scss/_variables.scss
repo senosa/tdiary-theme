@@ -21,6 +21,7 @@ $border: 1px solid $divider;
 // Font
 $font-size-base: 16px;
 $font-size-small: round($font-size-base * 0.85);
+$font-size-xsmall: round($font-size-base * 0.5);
 $font-size-large: round($font-size-base * 1.15);
 $font-size-diary-title: round($font-size-base * 1.5);
 $font-size-date-title: round($font-size-base * 1.5);

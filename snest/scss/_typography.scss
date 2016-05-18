@@ -31,6 +31,11 @@ h3 {
   font-size: $font-size-section-title;
 }
 
+h3 {
+  background-color: $grey;
+  padding-bottom: $pad-small;
+}
+
 div.sidebar h3 {
   font-size: $font-size-date-title;
   margin: $pad-large 0 $pad-base;
@@ -45,6 +50,7 @@ h6 {
 
 h4 {
   font-size: $font-size-large;
+  border-bottom: 2px solid $primary;
 }
 
 h5 {
@@ -75,6 +81,13 @@ a {
   .section &.amazon-detail,
   .section h3 & {
     text-decoration: none;
+  }
+  h3 > &:first-child {
+    display: block;
+    margin-bottom: $pad-small;
+    background-color: $primary;
+    color: $primary;
+    font-size: $font-size-xsmall;
   }
 }
 

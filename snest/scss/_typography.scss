@@ -32,13 +32,16 @@ h3 {
 }
 
 h3 {
-  background-color: $grey;
-  padding-bottom: $pad-small;
-}
-
-div.sidebar h3 {
-  font-size: $font-size-date-title;
-  margin: $pad-large 0 $pad-base;
+  background-color: lighten($primary, 60);
+  padding-bottom: $pad-base;
+  border-bottom: 1px solid $divider;
+  div.sidebar & {
+    background-color: inherit;
+    padding-bottom: inherit;
+    border-bottom: inherit;
+    font-size: $font-size-date-title;
+    margin: $pad-large 0 $pad-base;
+  }
 }
 
 h4,
@@ -84,7 +87,7 @@ a {
   }
   h3 > &:first-child {
     display: block;
-    margin-bottom: $pad-small;
+    margin-bottom: $pad-base;
     background-color: $primary;
     color: $primary;
     font-size: $font-size-xsmall;

@@ -52,8 +52,10 @@ h6 {
 }
 
 h4 {
+  color: $primary;
   font-size: $font-size-large;
   border-bottom: 2px solid $primary;
+  margin: $pad-large 0 $pad-base;
 }
 
 h5 {

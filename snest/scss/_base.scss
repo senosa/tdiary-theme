@@ -21,7 +21,7 @@ hr {
 
 .commentbody,
 .commentshort {
-  border-left: 2px solid $divider;
+  border-left: 8px solid lighten($primary, 60);
   margin-left: $pad-small;
   padding-left: $pad-small;
   body.update & {

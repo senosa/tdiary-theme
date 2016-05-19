@@ -44,18 +44,25 @@ hr {
 
 div.profile {
   border: none;
-  max-width: 304px;
-  max-width: 240px;
+  max-width: 320px;
   margin: 0 auto;
   span {
     color: $text;
     font-size: inherit;
+    margin-bottom: $pad-small;
+    &.profile-name {
+      font-size: $font-size-large;
+      font-weight: bold;
+    }
   }
   ul {
     text-align: center;
     list-style: none;
     margin: 0;
     padding: 0;
+  }
+  li {
+    margin-bottom: $pad-small;
   }
 }
 

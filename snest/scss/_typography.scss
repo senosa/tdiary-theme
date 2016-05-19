@@ -32,9 +32,9 @@ h3 {
 }
 
 h3 {
-  background-color: lighten($primary, 60);
   padding-bottom: $pad-base;
   border-bottom: 1px solid $divider;
+  color: $primary;
   div.sidebar & {
     background-color: inherit;
     padding-bottom: inherit;

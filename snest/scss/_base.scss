@@ -20,6 +20,10 @@ hr {
   max-width: 768px;
 }
 
+nav form {
+  display: inline-block;
+}
+
 .commentbody,
 .commentshort {
   border-left: 8px solid lighten($primary, 60);

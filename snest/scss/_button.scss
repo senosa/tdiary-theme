@@ -44,7 +44,7 @@ button:active {
 // Ghost <%= navi_admin %> in .sidebar
 .sidebar span.adminmenu a {
   background: inherit;
-  color: inherit;
+  color: $secondary;
 }
 
 .sidebar span.adminmenu a:hover {

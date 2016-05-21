@@ -81,13 +81,6 @@ a {
   .section h3 & {
     text-decoration: none;
   }
-  h3 > &:first-child {
-    display: block;
-    margin-bottom: $pad-base;
-    background-color: $primary;
-    color: $primary;
-    font-size: $font-size-xsmall;
-  }
 }
 
 pre {

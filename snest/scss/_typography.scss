@@ -9,6 +9,7 @@ h1,
 h2,
 h3,
 .update div.caption,
+div.sidebar h3,
 h4,
 h5,
 h6 {
@@ -28,13 +29,10 @@ h2 {
 
 .update div.caption,
 h3 {
-  font-size: $font-size-section-title;
-}
-
-h3 {
   color: $primary;
+  font-size: $font-size-section-title;
   div.sidebar & {
-    font-size: $font-size-date-title;
+    font-size: $font-size-diary-title;
   }
 }
 

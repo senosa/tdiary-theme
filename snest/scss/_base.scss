@@ -44,6 +44,17 @@ nav span.adminmenu a {
   margin: 0;
 }
 
+.sidebar {
+  border-top: $border;
+  input[type=search] {
+    width: 100%;
+  }
+  span.adminmenu a {
+    background: inherit;
+    color: $secondary;
+  }
+}
+
 .footer {
   border-top: $border;
   padding-top: $pad-base;

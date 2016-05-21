@@ -30,8 +30,8 @@ nav span.adminmenu a {
 
 .commentbody,
 .commentshort {
-  border-left: 8px solid lighten($primary, 60);
-  margin-left: $pad-small;
+  border-left: 8px solid $divider;
+  margin-left: $pad-xsmall;
   padding-left: $pad-small;
   body.update & {
     border: none;

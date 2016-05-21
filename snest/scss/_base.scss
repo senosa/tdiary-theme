@@ -23,8 +23,9 @@ hr {
   max-width: 768px;
 }
 
-nav form {
-  display: inline-block;
+div.adminmenu span.adminmenu a,
+nav span.adminmenu a {
+  padding: $pad-xsmall $pad-small;
 }
 
 .commentbody,

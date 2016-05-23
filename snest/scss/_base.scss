@@ -23,9 +23,11 @@ hr {
   max-width: 816px;
 }
 
-div.adminmenu span.adminmenu a,
-nav span.adminmenu a {
-  padding: $pad-xsmall $pad-small;
+div.adminmenu,
+nav {
+  span.adminmenu a {
+    padding: $pad-xsmall $pad-small $pad-xsmall 0;
+   }
 }
 
 .commentbody,

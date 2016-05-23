@@ -21,6 +21,16 @@ h6 {
 h1 {
   font-size: $font-size-diary-title;
   border-bottom: $border;
+  header & {
+    width: 100%;
+    background-color: rgba(255, 255, 255, .55);
+    border: 0;
+    font-family: $serif;
+    text-align: center;
+    padding: $pad-xsmall $pad-small;
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 h2 {

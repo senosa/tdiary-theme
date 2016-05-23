@@ -30,6 +30,15 @@ nav {
    }
 }
 
+header {
+  background-image: url(h1back.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 182px;
+  border: $border;
+  position: relative;
+}
+
 .commentbody,
 .commentshort {
   border-left: 8px solid $divider;

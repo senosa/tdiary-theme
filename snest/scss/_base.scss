@@ -102,6 +102,33 @@ form.update > div {
 
 hr {
   border-top: $border;
+  &.sep {
+    border: 0;
+  }
+}
+
+body:not(.update) hr.sep {
+  position: relative;
+  padding: $pad-large 0;
+  &::before,
+  &::after {
+    content: " ";
+    display: block;
+    height: $pad-large;
+    width: $pad-large;
+    background-color: $divider;
+    border-radius: 50%;
+    position: absolute;
+    top: $pad-large/4*3;
+    left: 50%;
+    margin: 0;
+  }
+  &::before {
+    margin-left: -($pad-large - $pad-large/4);
+  }
+  &::after {
+    margin-left: -$pad-large/4;
+  }
 }
 
 img {

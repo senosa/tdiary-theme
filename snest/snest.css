@@ -22,6 +22,7 @@ button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
   padding: 0; }
+
 button:-moz-focusring,
 input:-moz-focusring {
   outline: 1px dotted ButtonText; }
@@ -162,7 +163,7 @@ svg {
   box-sizing: border-box;
   color: #000000;
   cursor: default;
-  font: 100%/1.5 sans-serif; }
+  font: 66.66667% sans-serif; }
 
 a {
   text-decoration: none; }
@@ -223,18 +224,13 @@ table {
 textarea {
   resize: vertical; }
 
-::-moz-selection {
-  background-color: #b3d4fc;
-  color: #ffffff;
-  text-shadow: none; }
-
 ::selection {
   background-color: #b3d4fc;
   color: #ffffff;
   text-shadow: none; }
 
 .whole-content,
-.adminmenu,
+div.adminmenu,
 .content,
 .footer,
 .main,
@@ -244,13 +240,50 @@ textarea {
 .body,
 .comment,
 .referer,
+nav,
+header,
+aside,
 hr {
   margin: 0 auto;
   margin-bottom: 16px;
   width: 100%; }
 
 .whole-content {
-  padding: 0 8px; }
+  padding: 16px 8px 0;
+  max-width: 816px; }
+
+div.adminmenu span.adminmenu a,
+nav span.adminmenu a {
+  padding: 4px 8px 4px 0; }
+
+header {
+  background-image: url(h1back.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 182px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  position: relative; }
+
+.commentbody,
+.commentshort {
+  border-left: 8px solid rgba(0, 0, 0, 0.15);
+  margin-left: 4px;
+  padding-left: 8px; }
+  body.update .commentbody, body.update
+  .commentshort {
+    border: none;
+    margin: 0;
+    padding: 0; }
+
+.commentshort p {
+  margin: 0; }
+
+.sidebar {
+  border-top: 1px solid rgba(0, 0, 0, 0.15); }
+  .sidebar input[type=search] {
+    width: 100%; }
+  .sidebar span.adminmenu a {
+    color: rgba(0, 0, 0, 0.55); }
 
 .footer {
   border-top: 1px solid rgba(0, 0, 0, 0.15);
@@ -258,8 +291,51 @@ hr {
   text-align: center;
   font-size: 14px; }
 
+div.profile {
+  border: none;
+  max-width: 320px;
+  margin: 0 auto; }
+  div.profile span {
+    color: rgba(0, 0, 0, 0.9);
+    font-size: inherit;
+    margin-bottom: 8px; }
+    div.profile span.profile-name {
+      font-size: 18px;
+      font-weight: bold; }
+  div.profile ul {
+    text-align: center;
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  div.profile li {
+    margin-bottom: 8px; }
+
+form.update > div {
+  padding-bottom: 16px; }
+
 hr {
   border-top: 1px solid rgba(0, 0, 0, 0.15); }
+  hr.sep {
+    border: 0; }
+
+body:not(.update) hr.sep {
+  position: relative;
+  padding: 32px 0; }
+  body:not(.update) hr.sep::before, body:not(.update) hr.sep::after {
+    content: " ";
+    display: block;
+    height: 32px;
+    width: 32px;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    margin: 0; }
+  body:not(.update) hr.sep::before {
+    margin-left: -24px; }
+  body:not(.update) hr.sep::after {
+    margin-left: -8px; }
 
 img {
   display: block;
@@ -271,16 +347,64 @@ img {
   img.photo {
     margin: 0 auto;
     float: none; }
+  #flickr_photos > img {
+    display: inline-block; }
+
+span.amazon-detail {
+  padding: 8px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15); }
+  span.amazon-detail > br {
+    display: none; }
+
+img.amazon-detail.left {
+  margin: 0 8px 8px 0; }
+
+span.amazon-author {
+  font-size: inherit; }
+
+span.amazon-label,
+span.amazon-price {
+  font-size: 14px; }
+
+@media screen and (min-width: 568px) {
+  .sidebar {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+            flex-wrap: wrap; }
+    .sidebar div.sidebar-item {
+      -webkit-flex: 0 0 50%;
+              flex: 0 0 50%; }
+    .sidebar aside.search,
+    .sidebar aside.recent {
+      -webkit-flex: 0 0 55%;
+              flex: 0 0 55%; }
+    .sidebar aside.kakolog,
+    .sidebar aside.profile {
+      -webkit-flex: 0 0 45%;
+              flex: 0 0 45%;
+      padding-left: 32px; } }
+
+@media screen and (min-width: 768px) {
+  header {
+    height: 302px; } }
+
+@media screen and (min-width: 848px) {
+  .whole-content {
+    padding: 16px 0 0; } }
 
 body {
-  color: rgba(0, 0, 0, 0.8);
-  font-family: Avenir, Verdana, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  color: rgba(0, 0, 0, 0.9);
+  font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
   font-size: 16px;
   line-height: 1.8; }
 
 h1,
 h2,
 h3,
+.update div.caption,
+div.sidebar h3,
 h4,
 h5,
 h6 {
@@ -289,13 +413,28 @@ h6 {
   margin: 32px 0 16px; }
 
 h1 {
-  font-size: 24px; }
+  font-size: 24px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
+  header h1 {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.35);
+    border: 0;
+    font-family: "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "メイリオ", Meiryo, serif;
+    text-align: center;
+    padding: 4px 8px;
+    position: absolute;
+    bottom: 0; }
 
 h2 {
-  font-size: 24px; }
+  font-size: 18px; }
 
+.update div.caption,
 h3 {
-  font-size: 28px; }
+  color: #385466;
+  font-size: 30px; }
+  div.sidebar .update div.caption, div.sidebar
+  h3 {
+    font-size: 24px; }
 
 h4,
 h5,
@@ -304,7 +443,10 @@ h6 {
   margin: 16px 0 4px; }
 
 h4 {
-  font-size: 18px; }
+  color: #385466;
+  font-size: 18px;
+  border-bottom: 2px solid #385466;
+  margin: 32px 0 16px; }
 
 h5 {
   font-size: 16px; }
@@ -315,26 +457,29 @@ h6 {
 p {
   margin-bottom: 16px; }
 
-a {
-  color: #385466; }
-  .section p a, .section li a, .section dd a, .section td a, ul.category a {
-    color: #2196f3;
-    text-decoration: underline; }
-    .section p a:visited, .section li a:visited, .section dd a:visited, .section td a:visited, ul.category a:visited {
-      color: #385466; }
+p.message,
+span.message {
+  background-color: #a12800; }
 
-.section p a.amazon-detail {
-  text-decoration: none; }
+a {
+  color: #116ebd; }
+  a:visited {
+    color: #551A8B; }
+  .section a {
+    text-decoration: underline; }
+  .section a.amazon-detail,
+  .section h3 a {
+    text-decoration: none; }
 
 pre {
   background: #efefef;
-  font-family: "Osaka－等幅", Osaka-mono, "ＭＳ ゴシック", "MS Gothic", monospace;
+  font-family: "Ricty", "Consolas", "Courier New", "Osaka－等幅", Osaka-mono, "ＭＳ ゴシック", "MS Gothic", monospace;
   margin-bottom: 16px;
   padding: 8px;
   white-space: pre-wrap; }
 
 code {
-  font-family: "Osaka－等幅", Osaka-mono, "ＭＳ ゴシック", "MS Gothic", monospace; }
+  font-family: "Ricty", "Consolas", "Courier New", "Osaka－等幅", Osaka-mono, "ＭＳ ゴシック", "MS Gothic", monospace; }
 
 strong {
   color: #a12800; }
@@ -353,6 +498,10 @@ ol {
   ol
   ol {
     margin-bottom: 0; }
+  .textarea ul, .textarea
+  ol {
+    padding: 0;
+    margin-bottom: 8px; }
 
 dl {
   margin-bottom: 16px; }
@@ -454,19 +603,19 @@ input[type="color"][disabled],
 select[disabled],
 textarea[disabled] {
   background-color: rgba(0, 0, 0, 0.15);
-  color: #41446f;
+  color: rgba(0, 0, 0, 0.55);
   cursor: not-allowed; }
 
 input:not([type])[disabled] {
   background-color: rgba(0, 0, 0, 0.15);
-  color: #41446f;
+  color: rgba(0, 0, 0, 0.55);
   cursor: not-allowed; }
 
 input[readonly],
 select[readonly],
 textarea[readonly] {
   border-color: rgba(0, 0, 0, 0.15);
-  color: #41446f; }
+  color: rgba(0, 0, 0, 0.55); }
 
 select {
   -webkit-appearance: menulist-button; }
@@ -476,9 +625,45 @@ textarea {
   margin-bottom: 8px;
   max-width: 100%;
   width: 100%; }
+  .update textarea {
+    width: inherit; }
 
 .field.title {
   margin: 8px 0; }
+
+input[type=button],
+input[type=submit],
+input[type=reset],
+button {
+  background: #116ebd;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0;
+  padding: 4px 8px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap; }
+
+input[type=button]:hover,
+input[type=submit]:hover,
+input[type=reset]:hover,
+button:hover {
+  background: #0d538e; }
+
+input[type=button]:focus,
+input[type=submit]:focus,
+input[type=reset]:focus,
+button:focus {
+  background: #0d538e; }
+
+input[type=button]:active,
+input[type=submit]:active,
+input[type=reset]:active,
+button:active {
+  background: rgba(0, 0, 0, 0.55); }
 
 table {
   border-top: 1px solid rgba(0, 0, 0, 0.15);

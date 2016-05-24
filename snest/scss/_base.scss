@@ -169,3 +169,33 @@ span.amazon-price {
   font-size: $font-size-small;
 }
 
+@media screen and (min-width: $break-small) {
+  .sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    div.sidebar-item {
+      flex: 0 0 50%;
+    }
+    aside.search,
+    aside.recent {
+      flex: 0 0 55%;
+    }
+    aside.kakolog,
+    aside.profile {
+      flex: 0 0 45%;
+      padding-left: $pad-large;
+    }
+  }
+}
+
+@media screen and (min-width: $break-tablet) {
+  header {
+    height: 302px;
+  }
+}
+
+@media screen and (min-width: $break-large) {
+  .whole-content {
+    padding: $pad-base 0 0;
+  }
+}

@@ -32,3 +32,8 @@ $sans-serif: "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragin
 $serif: "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "メイリオ", Meiryo, serif;
 $monospace: "Ricty", "Consolas", "Courier New", "Osaka－等幅", Osaka-mono, "ＭＳ ゴシック", "MS Gothic", monospace;
 $font-family: $sans-serif;
+
+// Responsive
+$break-small: 568px;
+$break-tablet: 768px;
+$break-large: 848px;
